@@ -1,0 +1,4 @@
+run serial
+rm -f *.out  connect_flow_serial connect_flow_thread_mode connect_flow_thread_openmp
+g++ -m64 -O2 -std=c++17 -Wall -o connect_flow_serial connect_flow_serial.o Puzzle.o
+| 15728.286770

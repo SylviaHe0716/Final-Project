@@ -1,0 +1,23 @@
+run thread
+rm -f *.out  connect_flow_serial connect_flow_thread_mode connect_flow_thread_openmp
+g++ -m64 -O2 -std=c++17 -Wall -pthread -o connect_flow_thread_mode connect_flow_thread_pool.o Puzzle.o ThreadPool.o
+Task num : 2
+| 0.000126
+Task num : 2
+| 0.000171
+Task num : 12
+| 0.000217
+Task num : 2
+| 0.000180
+Task num : 12
+| 0.000195
+Task num : 12
+| 0.000207
+Task num : 2
+| 0.000146
+Task num : 12
+| 0.000199
+Task num : 2
+| 0.000161
+Task num : 2
+| 0.000150

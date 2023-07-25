@@ -1,0 +1,14 @@
+run serial
+rm -f *.out connect_flow_thread_pool.o Puzzle.o ThreadPool.o connect_flow_serial connect_flow_thread_mode
+g++ -m64 Puzzle.cpp -O2 -std=c++17 -Wall -pthread -c -o Puzzle.o
+g++ -m64 -O2 -std=c++17 -Wall -pthread -o connect_flow_serial connect_flow_serial.o Puzzle.o
+| 0.000040
+| 0.000035
+| 0.000034
+| 0.000039
+| 0.000038
+| 0.000033
+| 0.000033
+| 0.000037
+| 0.000037
+| 0.000039

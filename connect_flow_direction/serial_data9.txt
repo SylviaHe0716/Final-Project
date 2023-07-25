@@ -1,0 +1,14 @@
+run serial
+rm -f *.out  connect_flow_serial connect_flow_thread_mode connect_flow_thread_openmp
+g++ -m64 -O2 -std=c++17 -Wall   -c -o connect_flow_serial.o connect_flow_serial.cpp
+g++ -m64 -O2 -std=c++17 -Wall -o connect_flow_serial connect_flow_serial.o Puzzle.o
+| 76.791261
+| 7.399423
+| 76.600404
+| 76.742226
+| 76.646459
+| 7.402851
+| 7.398957
+| 7.408464
+| 76.563251
+| 7.411111

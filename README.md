@@ -1,1 +1,3 @@
-# Final-Project
+# Final Project - Parallel Execution and Optimizations of a Backtracking Algorithm for a Connect Flow Puzzle Problem
+
+This study focus on optimizing the solving process of connect flow problems by parallel execution by recursive backtracking algorithm. The rule of this problem is being able to connect all pairs of dots with colour corresponded on a 2D grid. Meanwhile, none of the lines which are join together can cross over each other. We compare and analyze the different performance and effort of two types of Shared-Memory model, POSIX Threads(Pthreads) and OpenMP. The performance is scored by the time for solving Connect Flow Puzzle Problems through Backtracking Algorithm under two different models and structure.

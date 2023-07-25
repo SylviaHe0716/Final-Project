@@ -1,0 +1,23 @@
+run openmp thread
+rm -f *.out  connect_flow_serial connect_flow_thread_mode connect_flow_thread_openmp
+g++ -m64 -O2 -std=c++17 -Wall -fopenmp -o connect_flow_thread_openmp connect_flow_thread_openmp.o Puzzle.o
+Task num : 18
+| 0.000203
+Task num : 18
+| 0.000197
+Task num : 18
+| 0.000195
+Task num : 18
+| 0.000200
+Task num : 18
+| 0.000203
+Task num : 14
+| 0.000212
+Task num : 18
+| 0.000222
+Task num : 14
+| 0.000215
+Task num : 18
+| 0.000212
+Task num : 14
+| 0.000215
